@@ -1,7 +1,7 @@
-//1
 let nome = "Maria Vitória";
 let idade = "15";
-console.log('Olá, meu nome é',nome, 'e eu tenho' ,idade,"anos");
+
+console.log("Olá, meu nome é" +nome+ "e eu tenho" +idade+ "anos");
 
 //2
 let string = "Julia Vitória"
@@ -20,7 +20,7 @@ let numero = (typeof int)
 console.log(numero)
 
 //4
-let peso = 44
-let altura = 1.54
-let imc = peso / (altura * altura)
-console.log(imc)
+let peso = 44;
+let altura = 1.54;
+let imc =  (peso / (altura * altura)).toFixed(2);
+console.log("Seu IMC é:" +imc);
