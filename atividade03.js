@@ -1,11 +1,11 @@
 //1
-var apartamento = {
+let ap = {
     quartos: 2,
     tipo: "Apartamento",
     endereco: "Avenida Principal, 456 - Centro",
     andar: 7};
 
-console.log(`${apartamento.tipo} com ${apartamento.quartos} quartos, localizado no ${apartamento.andar}º andar da ${apartamento.endereco}.`);
+console.log(`${ap.tipo} com ${ap.quartos} quartos, localizado no ${ap.andar}º andar da ${ap.endereco}.`);
 
 
 //2
@@ -15,7 +15,7 @@ let produtoEmbalado = {
     peso: 1.5,
     preco: 3500.00};
 
-console.log(`O produto ${produtoEmbalado.nome}, da categoria ${produtoEmbalado.categoria}, pesando ${produtoEmbalado.peso} kg, está à venda por R$ ${produtoEmbalado.preco.toFixed(2)}`);
+console.log(`O produto ${produtoEmbalado.nome}, da categoria ${produtoEmbalado.categoria}, pesando ${produtoEmbalado.peso} kg, está à venda por R$ ${produtoEmbalado.preco.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`);
 
 //3
 class Imovel {
